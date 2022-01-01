@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* Google Fonts:
+Montserrat: Bold (700, 700 italic)
+https://fonts.google.com/specimen/Montserrat
+Open Sans: Regular (400, 400 italic)
+https://fonts.google.com/specimen/Open+Sans
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Open+Sans:ital@0;1&display=swap');
+
+/* Replace default font-family with Open Sans */
+html, body, footer {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.navbar .nav-link {
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 1.125rem;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+	color: #1c75bc;
+}
+
+#nav-logo {
+	transition: all .3s ease-in-out;
+}
+#nav-logo:hover {
+	transform: scale(1.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+/* bg video should take up entire width*/
+#jumbotron-bg-video {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	object-fit: cover;
+	opacity: 0.7;
+}
+
+#jumbotron-bg-image {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	object-fit: cover;
+	opacity: 0.7;
+	animation: image_blur 3s forwards;
+}
+
+@keyframes image_blur {
+    0% {
+		-webkit-filter: blur(0px);
+		filter: blur(0px);
+	}
+	100% { 
+		-webkit-filter: blur(5px);
+		filter: blur(5px);
+	}
+}
+
+#jumbotron-lg-heading {
+	font-size: 6rem;
+	padding-top: 6rem;
+	-webkit-animation: fadeIn 5s;
+    animation: fadeIn 5s;
+}
+
+.jumbotron {
+	background-color: #000;
+	overflow: hidden;
+	position: relative;
+	min-height: 75vh;
+}
+
+.jumbotron-about {
+	background-color: #000;
+	overflow: hidden;
+	position: relative;
+	min-height: 100vh;
+}
+
+.jumbotron-work {
+	background-color: #000;
+	overflow: hidden;
+	position: relative;
+	min-height: 50vh;
+}
+
+.jumbotron .container{
+	z-index: 2;
+	position: relative;
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+
+.jumbotron h1 {
+	font-size: 3rem;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000000;
+	-webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.jumbotron p{
+	font-size: 2.25rem;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000000;
+	-webkit-animation: fadeIn 4s;
+    animation: fadeIn 4s;
+}
+
+/* Make the jumbotron font-size larger on larger devices */
+@media (min-width: 768px) { 
+	.jumbotron h1 {
+		font-size: 4rem;
+	}
+
+	.jumbotron p{
+		font-size: 3rem;
+	}
+}
+
+.carousel-inner {
+	background-color: #000;
+}
+
+.carousel-inner img {
+    width: 100%;
+	height: 75vh;
+	max-height: 75vh;
+	object-fit: cover;
+	opacity: 0.9;
+  }
+
+
+.home-caption {
+	font-size: 1.25rem;
+}
+
+.home-caption h2{
+	font-size: 3rem;
+}
+
+.home-caption a {
+	font-family: 'Montserrat', sans-serif;
+	color: #1c75bc;
+}
+
+.carousel-caption,
+.carousel-caption h3 {
+	font-size: 3rem;
+	text-shadow: 2px 2px 5px #000000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	height: 50px;
+	width: 50px;
+}
+
+.page-heading-blue-bg {
+	background-color: #1c75bc;
+	color: #fff;
+}
+
+.page-heading-blue-bg h1{
+	font-size: 4rem;
+}
+
+.page-heading {
+	color: #1c75bc;
+}
+
+.page-heading h1{
+	font-size: 4rem;
+}
+
+.page-heading p{
+	font-size: 2rem;
+	font-style: italic;
+}
+
+.resume-category h2 {
+	border-bottom: 1px solid #1c75bc;
+	margin-bottom: 1.5rem;
+	margin-top: 2.5rem;
+}
+
+.resume-content {
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 1.125rem;
+}
+
+.resume-content h3, h4 {
+	font-family: 'Open Sans', sans-serif !important;
+	margin-bottom: 0.25rem;
+}
+
+.resume-content ul {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.resume-content ul li {
+	list-style-type: square;
+	margin-bottom: 0.5rem;
+}
+
+.btn-resume {
+	display: inline-flex;
+	vertical-align: middle;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.25rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: #1c75bc;
+	color: #fff;
+}
+
+.contact-form-container {
+	border: 1px solid #1c75bc;
+}
+
+form {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contact-label {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.125rem;
+}
+
+.btn-contact {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.25rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: #1c75bc;
+	color: #fff;
+}
+
+
+/*
+CSS for Scroll Indicator START
+https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+*/
+/* Style the header: fixed position (always stay at the top) */
+.scroll-progress-header {
+position: fixed;
+top: 0;
+z-index: 1;
+width: 100%;
+background-color: #f1f1f1;
+}
+  
+  /* The progress container (grey background) */
+.scroll-progress-container {
+width: 100%;
+height: 4px;
+background: #ccc;
+}
+  
+/* The progress bar (scroll indicator) */
+.scroll-progress-bar {
+height: 4px;
+background: #1c75bc;
+width: 0%;
+} 
+
+/* CSS for Scroll Indicator END */
+
+.about-category h2 {
+	border-bottom: 1px solid #fff;
+	margin-bottom: 1.5rem;
+	margin-top: 2.5rem;
+	font-size: 2.25rem;
+}
+
+.about-category h3 {
+	color: #1c75bc;
+}
+
+.about-category {
+	background-color: #000;
+	color: #fff;
+}
+
+.portfolio-dark {
+	background-color: #000;
+	color: #fff;
+}
+
+.portfolio-dark h1 {
+	background-color: #000;
+	color: #fff;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	font-size: 3rem;
+}
+
+.portfolio-dark p {
+	font-size: 1.25rem;
+}
+
+.portfolio-dark a {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio-light {
+	background-color: #fff;
+	color: #000;
+}
+
+.portfolio-light h1 {
+	background-color: #fff;
+	color: #000;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	font-size: 4rem;
+}
+
+.portfolio-light p {
+	font-size: 1.25rem;
+}
+
+.portfolio-light a {
+	font-family: 'Montserrat', sans-serif;
+	color: #1c75bc;
+}
+
+.process-category h2 {
+	border-bottom: 1px solid #1c75bc;
+	margin-bottom: 1.5rem;
+	margin-top: 2.5rem;
+}
+
+.process-content {
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 1.125rem;
+}
+
+.process-content h3, h4 {
+	margin-bottom: 0.25rem;
+}
+
+.process-content ul {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.process-content ul li {
+	list-style-type: square;
+	margin-bottom: 0.5rem;
+}
+
+.process-content a {
+	font-family: 'Montserrat', sans-serif;
+	color: #1c75bc;
+}

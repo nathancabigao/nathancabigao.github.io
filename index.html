@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nathan Cabigao | Portfolio</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand mr-5" href="index.html" id="nav-logo">
+				<img src="images/nc_logo.svg" height="50" alt="NC Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item pl-1 pr-1">
+						<a class="nav-link" href="html/about.html">About Me</a>
+					</li>
+					<li class="nav-item pl-1 pr-1">
+						<a class="nav-link" href="html/work.html">Work</a>
+					</li>
+					<li class="nav-item pl-1 pr-1">
+						<a class="nav-link" href="html/resume.html">Resume &amp; Experience</a>
+					</li>
+					<li class="nav-item pl-1 pr-1">
+						<a class="nav-link" href="html/contact.html">Contact Me</a>
+					</li>
+					<li class="nav-item pl-1 pr-1">
+						<a class="nav-link" href="html/process.html">Process</a>
+					</li>
+				</ul>
+			</div>
+    </div>
+    <!-- Scroll Indicator -->
+    <div class="scroll-progress-header fixed-top">
+      <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+      </div>
+    </div>
+    </nav>
+    <section>
+    	<div class="jumbotron text-center mt-0">
+        <video autoplay muted loop id="jumbotron-bg-video">
+          <source src="videos/jumbotron-bg-video.mp4" type="video/mp4">
+        </video>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12">
+              <h1>Hi, I'm Nathan Cabigao.</h1>
+              <p>I have a strong background in design and development, particularly in Web and UX.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-caption">
+      <div class="container-fluid text-center pt-5 mt-5 mb-5">
+        <div class="row">
+          <div class="col-12">
+            <h2>Thank you for checking out my Portfolio.</h2>
+            <p>If you need a great looking website or an accessible user interface, <a href="html/contact.html">I'd love to help you.</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Carousel - no container so that it spans the entire window with no gaps-->
+    <section class="pt-5 mt-5 ">
+      <div id="home-carousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#home-carousel" data-slide-to="1"></li>
+          <li data-target="#home-carousel" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="html/about.html">
+              <img src="images/about/nathan-cabigao-city-shot.jpg" alt="Nathan in Tokyo">
+              <div class="carousel-caption">
+                <h3>About Me</h3>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="html/work.html">
+              <img src="images/work/web-design-carousel.png" alt="Web Design Example">
+              <div class="carousel-caption">
+              <h3>Web Design and Development Work</h3>
+            </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="html/work.html">
+              <img src="images/work/graphic-design-carousel.jpg" alt="Graphic Design Showcase">
+            <div class="carousel-caption">
+              <h3>Graphic Design and Other Design Work</h3>
+            </div>
+            </a>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#home-carousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"><div class="sr-only">Prev</div></span>
+        </a>
+        <a class="carousel-control-next" href="#home-carousel" data-slide="next">
+          <span class="carousel-control-next-icon"><div class="sr-only">Next</div></span>
+        </a>
+      </div>
+    </section>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Nathan Cabigao. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	<!-- Custom JavaScript file -->
+	<script src="js/custom.js"></script>
+  </body>
+</html>
